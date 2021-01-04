@@ -1,0 +1,41 @@
+.container {
+    text-align: center;
+}
+
+.projects-grid {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+  
+.card{
+    width: 325px;
+    height: 350px;
+    margin: 10px 10px 10px 10px;
+    display: inline-block;
+    border: black;
+    border-style: inset;
+    border-width: medium;
+}
+
+.test button{
+    color: black;
+}
+  
+.card-image {
+    height: 175px;
+}
+  
+.project-description {
+    height: 100px;
+}
+  
+.projects-button {
+    padding-top: 100px;
+}
+
+@media (max-width: 350px) {
+    .card{
+        width: 300px;
+    }
+}

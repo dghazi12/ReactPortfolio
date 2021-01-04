@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import Main from './components/Main';
+import { Link } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './styling/App.css';
+
+class App extends Component {
+  render() {
+    return (
+        <div style={{height: '720px', position: 'relative'}}>
+            <Layout fixedHeader>
+                <Header className="navbar-color" title={<span><span style={{ color: '#ddd' }}></span><strong className="navbar-title">My Portfolio</strong></span>}>
+                    <Navigation className=" hide">
+                        <Link className="navbar-tab" to="/">Home</Link>
+                        <Link className="navbar-tab" to="/about">About Me</Link>
+                        <Link className="navbar-tab" to="/projects">Projects</Link>
+                        <Link className="navbar-tab" to="/contact">Contact</Link>
+                    </Navigation>
+                </Header>
+                <Drawer className="navbar-tab, navbar-color" title="My Portfolio" >
+                    <Navigation>
+                        <Link className="navbar-tab" to="/">Home</Link>
+                        <Link className="navbar-tab" to="/about">About Me</Link>
+                        <Link className="navbar-tab" to="/projects">Projects</Link>
+                        <Link className="navbar-tab" to="/contact">Contact</Link>
+                    </Navigation>
+                </Drawer>
+                <Content>
+                    <Main />
+                </Content>
+            </Layout>
+        </div>
+    );
+  }
 }
 
 export default App;
