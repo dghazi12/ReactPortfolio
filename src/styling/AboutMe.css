@@ -1,6 +1,6 @@
 .about-profile {
-    height: 225px;
-    width: 225px;
+    height: 250px;
+    width: 180px;
     border-radius: 50%;
     overflow: hidden;
     border-width: 3;
@@ -66,15 +66,11 @@
     height: 75px;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1300px) {
     .about-text {
         width: 100%; 
         margin: auto; 
         padding-top: 1em;
-    }
-    .about-profile {
-        height: 175px;
-        width: 175px;
     }
     .size {
         width: 70px; 
@@ -102,8 +98,8 @@
 
 @media (max-width: 768px) {
     .about-profile {
-        height: 200px;
-        width: 200px;
+        height: 225px;
+        width: 155px;
     }
     .about-text{
         margin-top: 10px;
@@ -113,10 +109,10 @@
     }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 685px) {
     .about-profile {
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 145px;
     }
 }
 
@@ -127,17 +123,30 @@
     }
 }
 
-@media (max-width: 508px) {
-    .about-text {
-        height: 100px;
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 353px) {
+@media (max-width: 550px) {
     .about-text {
         height: 100px;
         font-size: 9px;
+    }
+    .about-grid h2{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 497px) {
+    .about-text {
+        height: 100px;
+        font-size: 8px;
+    }
+    .about-grid h2{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 335px) {
+    .about-text {
+        height: 100px;
+        font-size: 7.5px;
     }
     .about-grid h2{
         font-size: 40px;
